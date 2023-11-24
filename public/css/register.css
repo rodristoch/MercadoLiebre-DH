@@ -1,0 +1,502 @@
+/* Colores:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+
+/* puntos de corte (break points)
+movil 425px
+tablet 770px
+desktop 1200*/
+
+
+/* Aclaración: en muchas reglas abajo de css verán border: 1px solid red; esto es porque para cada contenedor me ayudé dibujandoles
+un borde en rojo para centrarlos y verlo mejor, y poder visualizar sus anchos tambien */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+/* Header */
+.header-de-pagina {
+    background-color: #EAC926;
+    width: 100%;
+    padding-top: 20px;
+} 
+
+.div-top {
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.div-logo {              
+    width: 50%;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    width: 85%;           
+}
+
+.div-barra-busqueda {              
+    width: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.input-box {
+    width: 80%;                    
+    height: 40%;     
+    background-color: #2f3640;     
+    border-radius: 5px;
+    position: relative;
+    color: #f5f6f4;    
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 60px 0 15px;
+    font-size: 16px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #0d141f;
+}
+
+.div-texto {
+    width: 100%;    
+    font-size: 14px;    
+    font-weight: 300;                                             
+    margin-top: 20px;    
+    padding: 5px;        
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.navbar {
+    display: none;                 
+    width: 100%;                 
+}
+
+.ul-navbar-izq, .ul-navbar-der {
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;   
+    width: 40vw;
+}                               
+
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 1.5vw;
+}
+
+.menu-hamburguesa {
+    display: block;                
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    background-color: #1259c3;
+    border-radius: 0.5em;
+    margin: auto;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    padding: 0.75em;
+    border: 0.05em solid black;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 1.4em;
+} 
+
+.div-banner {
+    background-color: #ebebeb;
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    display: none;
+}
+
+/* Main */
+main {
+    background-color: #ebebeb;
+}
+
+.div-main {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-campo, .p-radio-buttons, .div-checkbox {
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.campo {
+    width: 100%; 
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.p-radio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.radio-buttons {
+    margin-right: -15%;
+}
+
+.radio-buttons2 {
+    margin-right: 2%;
+}
+
+h2 {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.div-checkbox {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.div-boton-enviar {
+    margin-bottom: 30px;
+}
+
+.boton-enviar {
+    background-color: #1259c3;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.boton-borrar {
+    background-color: rgb(146, 53, 146);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 3%;                  
+}
+
+h4 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.texto-footer {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fa-credit-card {
+    color: #1259c3;
+    font-size: 2em; 
+}
+
+.fa-gift {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.derechos {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+
+/* media queries */
+@media (min-width: 770px) {
+
+    /* header */
+    .div-logo {
+        width: 33%;
+        justify-content: flex-start;
+        margin-left: 4px;
+    }
+
+    .logo {
+        width: 85%;
+    }
+    
+    .div-barra-busqueda {
+        width: 33%;
+    }
+
+    .barra-busqueda {
+        width: 80%;
+        height: 30%;
+    }
+
+    .boton-de-busqueda {
+        height: 30%;
+    }
+
+    .div-texto {
+        width: 33%;
+        font-size: 1.4vw;
+        font-weight: 300;
+        margin-top: 0; 
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    .ul-navbar-izq, .ul-navbar-der {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ul-navbar-izq {
+        justify-content: left;
+        margin-left: 10px;
+    }
+
+    .ul-navbar-der {
+        justify-content: right;
+        margin-right: 10px;
+    }
+    
+    .navbar li {
+        margin: 0 1vw;
+    }
+
+    li a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 1.4vw;
+        font-weight: 300;
+        color: #292929;
+    }
+
+    .ul-navbar-izq li a {
+        color: #4e4e4e;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    /* Main */
+    .div-main {
+        width: 70%;
+    }
+
+    .p-campo {
+        padding-bottom: 50px; 
+    }
+
+    .radio-buttons {
+        margin-right: -25%;
+    }
+    
+    /* Footer */
+    footer {
+        margin-top: 4%;                  
+    }
+} 
+
+@media (min-width: 1200px) {
+
+    /* Header */
+    .div-top, .navbar, .div-main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    .div-texto {
+        font-size: 0.97vw; 
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+
+    .ul-navbar-izq, .ul-navbar-der {
+        width: 30vw;
+    }
+
+    .ul-navbar-izq {
+        justify-content: left;
+    }
+
+    .ul-navbar-der {
+        justify-content: right;
+    }
+    
+    .navbar li {
+        margin: 0 1.3vw;
+    }
+
+    li a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 0;
+        font-size: 1vw;
+        font-weight: 300;
+    }
+
+    .ul-navbar-izq li a {
+        color: #5c5c5c;
+        transition: 450ms;
+    }
+    
+    .ul-navbar-izq li a:hover {
+        color: black;
+    }
+
+    .ul-navbar-der li a {
+        color: #353535;
+        transition: 450ms;
+    }
+
+    .ul-navbar-der li a:hover {
+        color: black;
+    }
+    
+    /* Main */
+    .div-main {
+        width: 50%;
+    }
+
+    .radio-buttons {
+        margin-right: -35%;
+    }
+
+    .boton-enviar {
+        background-color: #1259c3;
+        transition: 450ms;
+    }
+
+    .boton-enviar:hover {
+        background-color: #0022AA;
+    }
+
+    .boton-borrar {
+        background-color: rgb(146, 53, 146);
+        transition: 450ms;
+    }
+
+    .boton-borrar:hover {
+        background-color: purple;
+    }
+    
+    /* Footer */
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 2%;
+    }
+
+    footer section {
+        width: 30%;
+    }
+
+    .texto-footer {
+        margin-bottom: 20px;
+    }
+
+    footer section p i {
+        transition: 450ms;
+    }
+
+    footer section p i:hover {
+        color: rgb(146, 53, 146);
+    }
+
+    .derechos {
+        margin-top: 10px;
+    }
+}
