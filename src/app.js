@@ -6,7 +6,7 @@ const path = require("path");   //para requerir path (para hacer un ruteo mas se
 const app = express();   //ejecuto express
 
 const port = process.env.PORT || 3030;
-app.listen (port, () => console.log("Servidor corriendo en puerto " + port));   //levanto el servidor y lo pongo a escuchar
+app.listen (port, () => console.log("Servidor corriendo en puerto ${port}"));   //levanto el servidor y lo pongo a escuchar
 
 
 app.get("/", (req, res) => {
