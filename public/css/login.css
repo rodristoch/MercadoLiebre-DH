@@ -447,6 +447,7 @@ h4 {
 
     .derechos {
         position: absolute;
-        bottom: 0px;
+        bottom: -10px;
+        padding-bottom: 8px;
     }
 }
