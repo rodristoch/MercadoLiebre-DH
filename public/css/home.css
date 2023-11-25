@@ -9,7 +9,7 @@ Verde: #39b54a; */
 
 /* puntos de corte (break points)
 movil 425px
-tablet 770px
+tablet 768px
 desktop 1200*/
 
 
@@ -361,6 +361,7 @@ h4 {
 
     /* Main */
     main {
+        margin-top: -10px;
         padding-bottom: 15px;
     }
 
