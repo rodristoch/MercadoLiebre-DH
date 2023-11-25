@@ -148,8 +148,8 @@ li a {
 } 
 
 .div-banner {
-    background-color: #ebebeb;
-    display: none;
+    background-color: #EAC926;
+    border: 0.1px solid #EAC926;
 }
 
 .banner {
@@ -279,7 +279,7 @@ h4 {
 }
 
 /* media queries */
-@media (min-width: 770px) {
+@media (min-width: 768px) {
 
     /* header */
     .div-logo {

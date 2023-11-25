@@ -174,7 +174,7 @@ main {
 
 h3 {
     font-size: 24px; 
-    padding-top: 4%;
+    padding-top: 6%;
 }
 
 .articulo {
@@ -293,7 +293,7 @@ h4 {
 }
 
 /* media queries */
-@media (min-width: 770px) {
+@media (min-width: 768px) {
 
     /* header */
     .div-logo {
@@ -472,6 +472,9 @@ h4 {
     }
     
     /* Main */
+    h3 { 
+        padding-top: 4%;
+    }
     .articulo {
         width: 22%;
         border-radius: 5px;
